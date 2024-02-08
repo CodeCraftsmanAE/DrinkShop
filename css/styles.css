@@ -12,11 +12,15 @@ Variables
 ================================
 */
 :root {
-    --clr-primary: #678e3e;
-    --clr-primary-light: #beed8c;
-    --clr-grey-1: #102a42;
-    --clr-grey-5: #617d98;
-    --clr-grey-10: #f1f5f8;
+    --clr-primary: #d47c5d;
+    /* Terracotta Orange-Brown */
+    --clr-primary-light: #f5bba7;
+    /* Light Apricot */
+    --clr-grey-1: #3d3630;
+    /* Dark Brown */
+    --clr-grey-5: #8a7e75;
+    /* Taupe Gray */
+    --clr-grey-10: #f8f9fa;
     --clr-white: #fff;
     --ff-primary: "Catamaran", sans-serif;
     --ff-secondary: "Grand Hotel", cursive;
@@ -132,13 +136,14 @@ p {
 }
 
 /*reserve the skills area so that no other content gets in it in case a skill is removed*/
-.clearfix::after,.clearfix::before {
+.clearfix::after,
+.clearfix::before {
     content: "";
     clear: both;
     display: table;
 }
 
-.section-title h3{
+.section-title h3 {
     font-family: var(--ff-secondary);
     color: var(--clr-primary);
 }
@@ -159,7 +164,7 @@ p {
         width: 95vw;
         padding: 4rem 1rem;
     }
-    
+
 }
 
 /*
@@ -171,10 +176,12 @@ Animation
     0% {
         transform: scale(1);
     }
+
     50% {
         transform: scale(1.5);
     }
-    100%{
+
+    100% {
         transform: scale(1);
     }
 }
@@ -184,15 +191,18 @@ Animation
         transform: translate(1000px);
         opacity: 0;
     }
+
     50% {
         transform: translate(-200px);
         opacity: 0.5;
     }
+
     75% {
         transform: translate(50px);
         opacity: 0.75;
     }
-    100%{
+
+    100% {
         transform: translate(0px);
         opacity: 1;
     }
@@ -203,15 +213,18 @@ Animation
         transform: translate(-1000px);
         opacity: 0;
     }
+
     50% {
         transform: translate(200px);
         opacity: 0.5;
     }
+
     75% {
         transform: translate(-50px);
         opacity: 0.75;
     }
-    100%{
+
+    100% {
         transform: translate(0px);
         opacity: 1;
     }
@@ -222,15 +235,18 @@ Animation
         transform: scale(1.25);
         opacity: 0;
     }
+
     50% {
         transform: scale(1.5);
         opacity: 0.5;
     }
-    100%{
+
+    100% {
         transform: scale(1);
         opacity: 1;
     }
 }
+
 /*
 ================================
 NavBar
@@ -245,7 +261,7 @@ NavBar
     color: var(--clr-primary);
     z-index: 1;
     cursor: pointer;
-/*animation*/
+    /*animation*/
     animation: bounce 2s ease infinite;
 }
 
@@ -310,6 +326,7 @@ NavBar
         max-width: 20rem;
     }
 }
+
 /*
 ================================
 Header
@@ -320,7 +337,7 @@ Header
     min-height: 100vh;
     background:
         linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-        url(../images/main-bcg.jpeg) center/cover no-repeat fixed;
+        url(../images/main-bcg.jpg) center/cover no-repeat fixed;
     position: relative;
     /* animation */
     overflow-x: hidden;
@@ -383,11 +400,11 @@ skills
 }
 
 .skill-icon {
-     font-size: 2.5rem;
-     margin-bottom: 1.25rem;
-     transition: var(--transition);
-     display: inline-block;
-     color: var(--clr-primary);
+    font-size: 2.5rem;
+    margin-bottom: 1.25rem;
+    transition: var(--transition);
+    display: inline-block;
+    color: var(--clr-primary);
 }
 
 .skill-text {
@@ -451,15 +468,17 @@ About
 }
 
 @media screen and (min-width: 992px) {
+
     .about-img,
     .about-info {
         float: left;
         width: 50%;
     }
+
     .about-info {
         padding-left: 2rem;
     }
-    
+
 }
 
 
@@ -586,7 +605,7 @@ Services
         width: 45%;
         margin-right: 5%;
     }
-    
+
 }
 
 @media screen and (min-width: 992px) {
@@ -624,7 +643,8 @@ Contact
     background: var(--clr-grey-10);
 }
 
-.contact-form, contact-info {
+.contact-form,
+contact-info {
     margin: 1rem 0;
 }
 
@@ -686,15 +706,17 @@ Contact
     display: block;
     width: 100%;
     padding: 0.75rem;
-    border-radius: 0  0 var(--radius) var(--radius);
+    border-radius: 0 0 var(--radius) var(--radius);
 }
 
 @media screen and (min-width: 992px) {
-    .contact-form, .contact-info {
+
+    .contact-form,
+    .contact-info {
         float: left;
         width: 50%;
     }
-    
+
 }
 
 .contact-form textarea {
